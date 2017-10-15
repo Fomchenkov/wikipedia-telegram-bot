@@ -61,7 +61,7 @@ ready_to_find = []
 def start_command(message):
 	uid = message.from_user.id
 	cid = message.chat.id
-	text = "Привет! Я бот. Я создан для взаимодействия с Википедией."
+	text = "Я бот для удобного взаимодействия с Википедией. Ищите интересующие вас статьи прямо в Telegram!"
 	markup = generate_main_markup()
 	return bot.send_message(cid, text, reply_markup=markup)
 
